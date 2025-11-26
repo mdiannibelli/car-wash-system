@@ -1,9 +1,21 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Carwash" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CarWash" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary Brand Color -->
+        <item name="colorPrimary">@color/logo_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Brand Color -->
+        <item name="colorSecondary">@color/logo_dark_blue</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/logo_red</item>
+
+        <!-- Other standard colors -->
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/poppins</item>
     </style>
 
-    <style name="Theme.Carwash" parent="Base.Theme.Carwash" />
 </resources>

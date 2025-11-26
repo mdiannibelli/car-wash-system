@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAddCarTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Car"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etCarPlate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAddCarTitle"
+        android:hint="Plate" />
+
+    <EditText
+        android:id="@+id/etCarBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCarPlate"
+        android:layout_marginTop="12dp"
+        android:hint="Brand" />
+
+    <EditText
+        android:id="@+id/etCarModel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCarBrand"
+        android:layout_marginTop="12dp"
+        android:hint="Model" />
+
+    <EditText
+        android:id="@+id/etCarColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCarModel"
+        android:layout_marginTop="12dp"
+        android:hint="Color" />
+
+    <Spinner
+        android:id="@+id/spinnerOwner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etCarColor"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSaveCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save Car" />
+
+</RelativeLayout>

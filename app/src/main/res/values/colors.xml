@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Default Colors -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Logo Colors -->
+    <color name="logo_red">#e42127</color>
+    <color name="logo_dark_blue">#081b2c</color>
 </resources>

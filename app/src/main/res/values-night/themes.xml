@@ -1,7 +1,21 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.Carwash" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.CarWash" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary Brand Color (Dark) -->
+        <item name="colorPrimary">@color/logo_dark_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary Brand Color (Accent) -->
+        <item name="colorSecondary">@color/logo_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/logo_dark_blue</item>
+
+        <!-- Other standard colors -->
+        <item name="android:navigationBarColor">@android:color/black</item>
+        <item name="android:fontFamily">@font/poppins</item>
     </style>
+
 </resources>

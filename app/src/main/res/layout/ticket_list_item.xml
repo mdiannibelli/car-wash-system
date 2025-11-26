@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginBottom="4dp"
+    android:background="@android:drawable/dialog_holo_light_frame">
+
+    <TextView
+        android:id="@+id/tvTicketTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/btnDeleteTicket"
+        android:layout_alignParentStart="true"
+        android:text="Plate - Service"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvTicketDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTicketTitle"
+        android:text="Date: 01/01/2025" />
+
+    <ImageButton
+        android:id="@+id/btnDeleteTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete Ticket"/>
+
+    <TextView
+        android:id="@+id/tvTicketStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnDeleteTicket"
+        android:layout_alignParentEnd="true"
+        android:text="Pending"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTicketPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTicketStatus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:text="$0.00"
+        android:textSize="16sp" />
+
+</RelativeLayout>

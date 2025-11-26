@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvAddTicketTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Ticket"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"/>
+
+    <TextView
+        android:id="@+id/labelSelectCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAddTicketTitle"
+        android:text="Select Car:"/>
+
+    <Spinner
+        android:id="@+id/spinnerCar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelSelectCar"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/labelSelectService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCar"
+        android:layout_marginTop="16dp"
+        android:text="Select Service:"/>
+
+    <Spinner
+        android:id="@+id/spinnerService"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/labelSelectService"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/tvServicePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerService"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:text="Price: $0.00" />
+
+    <Button
+        android:id="@+id/btnSaveTicket"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Save Ticket" />
+
+</RelativeLayout>
